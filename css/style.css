@@ -5,13 +5,34 @@
 
 #logo {
     max-width:40%;
+    -webkit-animation: slide-down 1.5s ease 0s 1 normal;
+    animation: slide-down 1.5s ease 0s 1 normal;
+    position: relative;
 }
 
-/*#mug {*/
-/*    max-height: 400px;*/
-/*    text-align: center;*/
-/*}*/
+@-webkit-keyframes slide-down {
+    from {bottom: 200px;}
+    to {bottom: 0;}
+}
 
+@keyframes slide-down {
+    from {bottom: 200px;}
+    to {bottom: 0;}
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.project {
+    margin: 10px;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: auto;
+}	
 
 /*End Custom CSS*/
 
@@ -227,6 +248,9 @@ img.img-responsive {
 }
 
 #load {
+    /*custom*/
+    display: none;
+    
 	z-index: 9999;
   background-color: #FF4136;
   opacity: 0.75;
