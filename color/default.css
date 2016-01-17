@@ -1,0 +1,61 @@
+/*fireworks blue*/
+/*rgb(5,24,166)*/
+/*#0518A6*/
+
+/*avalanche colors*/
+
+/*red:   #8B2942 rgb(139,41,66)*/
+
+
+/*blue:  #0518A6 rgb(1,84,138)*/
+
+
+/*khaki: #F2D693 rgb(242,214,147)*/
+
+
+/*gray:  #A9B0B8 rgb(169,176,184)*/
+
+
+/*black: #000000 rgb(0,0,0)*/
+
+
+/*original pink: #0518A6*/
+
+a,a:hover {
+	color: #0518A6;
+}
+
+.intro .page-scroll a:hover {
+	color: #0518A6;
+}
+
+.icon:hover .fa{
+	color: #0518A6;
+}
+
+ul.nav li a:hover {
+	color: #0518A6;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #0518A6;
+}
+
+.bg-skin {
+	background: #0518A6;
+}
+
+form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+	border-color: #0518A6;
+}
+
+footer {
+    background-color: #0518A6;
+}
+
+.btn-skin {
+  color: #fff;
+  background-color: #0518A6;
+  border-color: #0518A6;
+}
