@@ -20,6 +20,12 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+	<!--<script src="js/fireworks.js"></script>-->
+	<!--<script src="js/sketch.js"></script>-->
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -30,10 +36,10 @@
 
 	<!-- Section: intro -->
 	<section id="intro" class="intro">
-		<div class="slogan wow bounceInDown" data-wow-delay="0.2s">
+		<div id="logoDiv" class="slogan wow bounceInDown" data-wow-delay="0.2s">
 			<a href="index.html"><img src="img/custom/brian-mueller-logo-white.png" alt="" id="logo" /></a>
 		</div>
-		<div class="page-scroll wow bounceInUp" data-wow-delay="0.4s">
+		<div id="arrowDiv" class="page-scroll wow bounceInUp" data-wow-delay="0.4s">
 			<a href="#about">
 				<!--<i class="fa fa-angle-down fa-5x animated"></i>-->
 				<i class="fa fa-chevron-circle-down fa-5x animated"></i>
@@ -117,17 +123,17 @@
 
 	<!-- Section: separator -->
 	<section id="separator" class="home-section text-center" data-stellar-background-ratio="0.5">
-	<!--<section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">-->
+		<!--<section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">-->
 
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 wow bounceInUp" data-wow-delay="0.1s">
 					<div class="align-center txt-shadow">
 						<a href="pdf/Mueller-Brian-Resume.pdf" target="_blank">
-						<div class="icon">
-							<i class="fa fa-graduation-cap fa-5x"></i>
-						</div>
-						<span class="color-white">Résumé</span>
+							<div class="icon">
+								<i class="fa fa-graduation-cap fa-5x"></i>
+							</div>
+							<span class="color-white">Résumé</span>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 wow bounceInUp" data-wow-delay="0.2s">
@@ -183,34 +189,34 @@
 		<div class="container">
 			<div class="row">
 				<!--<div class="wow bounceInUp" data-wow-delay="0.4s">-->
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-						<a href="https://greenglassdoor.herokuapp.com/" title="Green Glass Door" target="_blank"><img src="img/custom/ggd-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.2s">
-						<a href="https://brianmueller.github.io/kuku-kube/" title="KuKu Kube" target="_blank"><img src="img/custom/kuku-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-						<a href="https://brianmueller.github.io/typing-hero/" title="Typing Hero" target="_blank"><img src="img/custom/typing-hero-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.4s">
-						<a href="https://brianmueller.github.io/key-masher/" title="Key Masher" target="_blank"><img src="img/custom/key-masher-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+					<a href="https://greenglassdoor.herokuapp.com/" title="Green Glass Door" target="_blank"><img src="img/custom/ggd-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.2s">
+					<a href="https://brianmueller.github.io/kuku-kube/" title="KuKu Kube" target="_blank"><img src="img/custom/kuku-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+					<a href="https://brianmueller.github.io/typing-hero/" title="Typing Hero" target="_blank"><img src="img/custom/typing-hero-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.4s">
+					<a href="https://brianmueller.github.io/key-masher/" title="Key Masher" target="_blank"><img src="img/custom/key-masher-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
 				<!--</div>-->
 			</div>
 			<div class="row">
 				<!--<div class="wow bounceInUp" data-wow-delay="0.4s">-->
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
-						<a href="https://brianmueller.github.io/p5js/sound-meter.html" title="Sound Meter" target="_blank"><img src="img/custom/sound-meter-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.2s">
-						<a href="https://brianmueller.github.io/good-morning/" title="Good Morning" target="_blank"><img src="img/custom/good-morning-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
-						<a href="https://brianmueller.github.io/for-dragging/" title="For Loop Dragging" target="_blank"><img src="img/custom/for-dragging-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
-					<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.4s">
-						<a href="https://brianmueller.github.io/p5js/" title="p5js Tutorial" target="_blank"><img src="img/custom/p5js-tutorial-thumb.png" class="img-responsive" alt="img"></a>
-					</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+					<a href="https://brianmueller.github.io/p5js/sound-meter.html" title="Sound Meter" target="_blank"><img src="img/custom/sound-meter-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.2s">
+					<a href="https://brianmueller.github.io/good-morning/" title="Good Morning" target="_blank"><img src="img/custom/good-morning-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+					<a href="https://brianmueller.github.io/for-dragging/" title="For Loop Dragging" target="_blank"><img src="img/custom/for-dragging-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
+				<div class="project col-sm-12 col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.4s">
+					<a href="https://brianmueller.github.io/p5js/" title="p5js Tutorial" target="_blank"><img src="img/custom/p5js-tutorial-thumb.png" class="img-responsive" alt="img"></a>
+				</div>
 
 				<!--</div>-->
 			</div>

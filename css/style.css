@@ -6,19 +6,21 @@
 #logo {
     max-width:40%;
     -webkit-animation: slide-down 1.5s ease 0s 1 normal;
-    /*animation: slide-down 1.5s ease 0s 1 normal;*/
     position: relative;
 }
 
-@-webkit-keyframes slide-down {
-    from {bottom: 200px;}
-    to {bottom: 0;}
+#defaultCanvas {
+    display: none;
+    position: absolute;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-@keyframes slide-down {
-    from {bottom: 200px;}
-    to {bottom: 0;}
-}
+/*#logoDiv, #arrowDiv {*/
+/*    z-index: 2;*/
+/*}*/
 
 .underline {
     text-decoration: underline;
@@ -349,6 +351,7 @@ hr {
 	position:relative;	
 	background: url(../img/custom/mueller-nyc-fireworks-small.jpg) no-repeat top center;
 	background-size: cover;
+	/*z-index:-2;*/
 }
 
 #intro.intro {
